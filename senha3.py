@@ -17,7 +17,7 @@ while True:
             cont+=1
         if cont >=4:
             break
-    senha.append(lista[:])
+    senha.extend(lista[:])
     lista.clear()
     print(f' senha e {senha}')
     t=0
@@ -35,7 +35,7 @@ while True:
     pos = 0
     for c in range(0, len(senha)):
         print(f'o jogo e {jogo[c]} e senha e {senha[c]}')
-        if jogo[c] == senha[c][c]:
+        if jogo[c] == senha[c]:
             pos = pos+1
     print(pos)
     num=0
